@@ -1,0 +1,156 @@
+header {
+    background-color: blueviolet;
+    height: 50px;
+}
+
+header * {
+    color: beige;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: plum;
+}
+
+header .logo {
+    float: left;
+    font-family: cursive;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float:left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 150px;
+    display: none;
+}
+
+header ul li:hover ul {
+display: block;
+}
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: rgb(243, 161, 233);
+    width: 75%;
+    
+}
+
+header ul li ul li a:hover {
+    background: rgb(230, 149, 230);
+}
+
+header ul li ul li a.logout {
+    color: red;
+}
+
+header ul li ul li {
+    width: 100;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.3em;
+}
+
+header ul li a:hover {
+    background-color: rgb(58, 2, 64);
+    
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 3em;
+}
+
+header .logo-text {
+    margin: 10px;
+}
+
+header .logo-text span {
+    color: rgb(245, 85, 213) ;
+}
+
+
+/* POST-SLIDER */
+.post-slider {
+    border: 1px solid red;
+}
+
+.post-slider .post-wrapper {
+    width: 85%;
+    height: 350px;
+    margin: 0px auto;
+    border: 1px dashed red;
+}
+
+.post-slider .post-wrapper .post {
+    height: 325px;
+    width: 250px;
+    display: inline-block;
+    background: palevioletred;
+}
+
+header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 1.5em;
+}
+
+
+/* MEDIA */
+@media only screen and (max width: 750px) {
+    header {
+        position: relative;
+    }
+     header ul {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .showing (
+    max-height: 100em;
+)
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    header ul li ul li a {
+        padding: 10px;
+        background: purple;
+        color: beige;
+        padding-left: 50px;
+    }
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.9em;
+    }
+
+}
